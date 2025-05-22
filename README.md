@@ -61,9 +61,9 @@ The color scheme can be modified in `styles.css`:
 
 Feel free to submit issues and enhancement requests!
 
-## License
+<!-- ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details. -->
 
 ## Acknowledgments
 
