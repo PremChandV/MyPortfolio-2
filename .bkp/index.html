@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>PREM - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Portfolio website of Prem Chand, Software Engineer and Web Developer.">
+    <meta name="keywords" content="Web Developer, Portfolio, JavaScript, HTML, CSS, Prem Chand">
+    <meta name="author" content="Prem Chand">
+
+</head>
+<!-- <body class="dark-mode"> -->
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <!-- <img src="images/profile.png" alt="Profile Image"> -->
+                <img src="images/profile.png" alt="Profile Image" loading="lazy">
+
+            </div>
+            <div class="typewriter-container">
+                <h1>Hi, I'm <span class="highlight typewriter-text"></span></h1>
+                <h2 class="typewriter-subtitle"></h2>
+            </div>
+            <p>I create visually appealing and easy-to-use web applications that work smoothly across all devices,
+                focusing on both design and functionality.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+                <a href="#" aria-label="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title"><span>About</span> Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/about.png" alt="About Image" onerror="this.style.display='none';">
+            </div>
+            <div class="about-text">
+                <p>I'm a Software Engineer and a passionate Web Developer with 3 years of experience in creating web
+                    applications. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
+                    or enjoying outdoor activities.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>3</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- <img src="images/3.png/400x300" alt="Project 1"> -->
+                    <img src="images/3.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Document Review Management System (DRMS)</h3>
+                    <p>It's a Web-base application. Built and maintained dynamic, responsive web applications using
+                        HTML, CSS, and JavaScript, while enhancing database performance and minimizing latency through
+                        MySQL optimization.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/4.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Automated Board Meeting (ABM)</h3>
+                    <p>It's a Web-base application. Designed and implemented responsive web applications using HTML,
+                        CSS, and JavaScript, using Selenium for automated end-to-end workflows and using MySQL to
+                        enhance application performance and reduce latency.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/1.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Scenario Generator for Electronic Warfare Training Simulator System (EWTSS)</h3>
+                    <p>Built responsive web applications using Python, with Fast API for better performance. Handled QA
+                        tasks like setting up software, creating batch files, and keeping user guides and manuals up to
+                        date.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Fast API</span>
+                        <!-- <span>JavaScript</span>
+                        <span>MySQL</span> -->
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>prem.chand@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 98480 12345</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Hyderabad, Telangana, India</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="phone" id="phone" required>
+                    <label for="phone">Phone No.</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email ID</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message...</label>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">My Portfolio</div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+                <a href="#" aria-label="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with ❤️ by <a href="https://github.com/PremChandV" target="_blank">Prem</a> & All rights are
+                reserved &copy; 2025.</p>
+        </div>
+    </footer>
+
+    <!-- Add this button just before the closing body tag -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Add this script just before the closing body tag
+    <script>
+        // Scroll to Top Button
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // DOM Elements
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Function to apply theme and update icon
+        function applyTheme(theme) {
+            if (theme === 'light') {
+                body.classList.add('light-mode');
+                body.classList.remove('dark-mode');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        // Load saved theme or default to dark
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            applyTheme(savedTheme);
+        });
+
+        // Theme toggle on icon click
+        themeToggle.addEventListener('click', () => {
+            const isLight = body.classList.contains('light-mode');
+            const newTheme = isLight ? 'dark' : 'light';
+            applyTheme(newTheme);
+        });
+
+        // Typewriting effect code
+        // Typewriter for a single name
+        function typeWriter(element, text, speed = 100, callback) {
+            let i = 0;
+            function typing() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, speed);
+                } else if (callback) {
+                    callback(); // Start the subtitle after name finishes
+                }
+            }
+            typing();
+        }
+
+        // Multiple Designations Typewriter (looping)
+        function typeMultipleDesignations(element, designations, speed = 100, pause = 2000) {
+            let index = 0;
+            let isDeleting = false;
+            let text = '';
+
+            function type() {
+                const fullText = designations[index];
+
+                if (isDeleting) {
+                    text = fullText.substring(0, text.length - 1);
+                } else {
+                    text = fullText.substring(0, text.length + 1);
+                }
+
+                element.innerHTML = text;
+
+                let delay = speed;
+                if (!isDeleting && text === fullText) {
+                    delay = pause;
+                    isDeleting = true;
+                } else if (isDeleting && text === '') {
+                    isDeleting = false;
+                    index = (index + 1) % designations.length;
+                    delay = 500;
+                }
+
+                setTimeout(type, delay);
+            }
+
+            type(); // Start typing loop
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        });
+
+
+        // Initialize Typewriter on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            const nameElement = document.querySelector('.typewriter-text');
+            const subtitleElement = document.querySelector('.typewriter-subtitle');
+
+            if (!nameElement || !subtitleElement) return;
+
+            // Clear previous content
+            nameElement.innerHTML = '';
+            subtitleElement.innerHTML = '';
+
+            // First type the name, then the looping designations
+            typeWriter(nameElement, 'Prem Chand', 150, () => {
+                const titles = [
+                    'Web Developer',
+                    'Software Engineer',
+                    'Tech Enthusiast',
+                    'Problem Solver'
+                ];
+                typeMultipleDesignations(subtitleElement, titles, 100, 2000);
+            });
+        });
+
+    </script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
